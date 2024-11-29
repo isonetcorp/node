@@ -12,7 +12,7 @@ export let sequelize = new Sequelize(
         logging: console.log, 
          dialectOptions: {
              ssl: {
-                 requires: false,
+                 requires: true,
                  rejectUnauthorized: false, // for self-signed certificates
              }
          }
