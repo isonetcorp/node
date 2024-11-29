@@ -10,11 +10,11 @@ export let sequelize = new Sequelize(
         port: process.env.DB_PORT,
         dialect: process.env.DB_DIALENCT,
         logging: console.log, 
-        // dialectOptions: {
-        //     ssl: {
-        //         requires: false,
-        //         rejectUnauthorized: false, // for self-signed certificates
-        //     }
-        // }
+         dialectOptions: {
+             ssl: {
+                 requires: false,
+                 rejectUnauthorized: false, // for self-signed certificates
+             }
+         }
     }
 );
